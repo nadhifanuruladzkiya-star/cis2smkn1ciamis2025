@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link cis 1</title>
+  <link rel="stylesheet" href="style.css.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Foto Profil -->
+    <img src="badgee.jpg" alt="foto profile" class="profile-img">
+
+    <!-- Nama dan Deskripsi -->
+    <h1>CIS 2 SMKN1 CIAMIS 2025</h1>
+    <p class="subtitle">"CIPTA KARYA SEORANG PRAJA</p>
+
+    <!-- Daftar Link -->
+    <div class="links">
+      <a href="https://youtube.com/">📘 juklas Juknis Perlombaan</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-m1T1MyZy5HXFr-qyqNvsCQ_LMSkOxYblyXy1GhmJnIq5Pg/viewform?usp=header">📝 Link Pendaftaran Lomba</a>
+      <a href="https://wa.me/685222689152" target="_blank">Contact WhatsApp</a>
+      <a href="https://www.instagram.com/bhardesh_/" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <!-- JavaScript langsung di HTML -->
+  <script>
+    // Efek animasi masuk (fade-in)
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll(".links a");
+      links.forEach((link, index) => {
+        link.style.opacity = "0";
+        link.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          link.style.transition = "all 0.5s ease";
+          link.style.opacity = "1";
+          link.style.transform = "translateY(0)";
+        }, index * 200);
+      });
+    });
+  </script>
+</body>
+</html>
